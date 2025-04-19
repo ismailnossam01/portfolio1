@@ -11,7 +11,6 @@ const TypewriterText: React.FC<TypewriterTextProps> = ({ text, className = '' })
   const roles = [
     'AI & ML Specialist',
     'Full Stack Developer',
-    'Web Developer',
     'Python Developer'
   ];
 
