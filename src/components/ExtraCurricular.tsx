@@ -16,6 +16,11 @@ const activities = [
     title: "Club Activities",
     description: "Active member of departmental clubs, contributing to various initiatives and activities.",
     icon: Star
+  },
+  {
+    title: "Student Coordinator",
+    description: "Organized events as a Student Coordinator in the Institution Innovation Council (IIC).",
+    icon: Users
   }
 ];
 
