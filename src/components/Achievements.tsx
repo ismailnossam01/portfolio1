@@ -11,6 +11,7 @@ const achievements: Achievement[] = [
   { title: "Merit Prizes in college paper and Poster presentations", link: "#" },
   { title: "Patent applied for wireless data transfer to a pendrive", link: "#" },
   { title: "Participant in Smart India Hackathon", link: "#" },
+  { title: "Participated in CODEQUEST 24-Hour Hackathon on campus" },
   { title: "Participated in CODEQUEST 24-Hour Hackathon on campus" }
 ];
 
