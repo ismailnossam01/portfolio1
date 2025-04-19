@@ -42,28 +42,27 @@ function App() {
               </a>
             </div>
 
-            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+<div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
   <a
     href="mailto:ismailnossam@gmail.com"
-    className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-500 text-white font-semibold hover:from-blue-500 hover:to-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full sm:w-auto"
+    className="flex-1 inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-500 text-white font-semibold hover:from-blue-500 hover:to-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
   >
     Hire Me
   </a>
   <a
     href="#contact"
-    className="inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1 w-full sm:w-auto"
+    className="flex-1 inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1"
   >
     Contact
   </a>
 </div>
 <a
   href="#"
-  className="mt-4 inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1 w-full"
+  className="mt-4 inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1 sm:w-[calc(50%*2+1rem)]"
 >
   View Resume
 </a>
 
-          </div>
           
           <FloatingImage
             src="https://i.ibb.co/rsc8Q7S/IMG-20250113-204136.jpg"
