@@ -55,6 +55,12 @@ function App() {
               >
                 Contact
               </a>
+                <a
+                href="#contact"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1"
+              >
+                Resume
+              </a>
             </div>
           </div>
           
