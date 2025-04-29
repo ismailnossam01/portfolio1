@@ -26,7 +26,7 @@ function App() {
               Ismail Nossam
             </h1>
             <TypewriterText 
-              text="AI & ML Specialist | Full Stack Developer"
+              text="AI & ML Passionate | Full Stack Developer"
               className="text-lg md:text-xl text-blue-400 mb-6 block h-8"
             />
             
