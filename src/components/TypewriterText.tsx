@@ -9,7 +9,7 @@ interface TypewriterTextProps {
 const TypewriterText: React.FC<TypewriterTextProps> = ({ text, className = '' }) => {
   const [currentRole, setCurrentRole] = useState(0);
   const roles = [
-    'AI & ML Specialist',
+    'AI & ML Passionate',
     'Full Stack Developer',
     'Python Developer'
   ];
