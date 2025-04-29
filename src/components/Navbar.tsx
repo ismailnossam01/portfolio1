@@ -51,12 +51,12 @@ const Navbar = () => {
           </span>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6 lg:space-x-8">
+          <div className="hidden md:flex space-x-4 lg:space-x-6">
             {menuItems.map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="relative text-white font-medium text-lg transition-all duration-300 hover:text-white hover:after:scale-x-100 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:scale-x-0 after:bg-white after:transition-transform after:duration-300"
+                className="text-white font-semibold text-sm px-4 py-2 rounded-full transition-all duration-300 hover:bg-white hover:text-blue-500"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </button>
@@ -80,7 +80,7 @@ const Navbar = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item)}
-                  className="text-white font-semibold text-lg capitalize text-left px-4 py-2 rounded-lg transition-all duration-300 hover:bg-white hover:text-blue-500"
+                  className="text-white font-semibold text-lg capitalize text-left px-4 py-2 hover:bg-white hover:text-blue-500 rounded-lg transition-all duration-300"
                 >
                   {item}
                 </button>
