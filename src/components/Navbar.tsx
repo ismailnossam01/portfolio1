@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <span
-            className="bg-white text-blue-600 font-bold text-2xl mr-4 cursor-pointer rounded-full w-12 h-12 flex items-center justify-center"
+            className="bg-white text-blue-600 font-semibold text-2xl mr-4 cursor-pointer rounded-full w-12 h-12 flex items-center justify-center"
             onClick={scrollToTop}
           >
             IN
