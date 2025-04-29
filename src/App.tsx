@@ -58,7 +58,7 @@ function App() {
     </a>
   </div>
   <a
-    href="#"
+    href="https://drive.google.com/file/d/18ltKuldV15qIIcc7fK2ONmR-SbP2OA6M/view?usp=drive_link"
     className="inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1 w-full"
   >
     View Resume
