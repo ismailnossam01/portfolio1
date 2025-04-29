@@ -7,7 +7,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 20); // Check if scrolled more than 20px
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -51,12 +51,12 @@ const Navbar = () => {
           </span>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-4 lg:space-x-6">
+          <div className="hidden md:flex space-x-2 lg:space-x-4">
             {menuItems.map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="text-white font-semibold text-m px-4 py-2 rounded-full transition-all duration-300 hover:bg-white hover:text-blue-500"
+                className="text-white font-semibold text-lg px-4 py-2 rounded-full transition-all duration-300 hover:bg-white hover:text-blue-500"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </button>
@@ -75,12 +75,12 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-blue-500/90 backdrop-blur-md shadow-lg absolute left-0 right-0 p-4 transition-all">
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-2">
               {menuItems.map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item)}
-                  className="text-white font-semibold text-m capitalize text-left px-4 py-2 hover:bg-white hover:text-blue-500 rounded-lg transition-all duration-300"
+                  className="text-white font-semibold text-lg capitalize text-left px-4 py-2 hover:bg-white hover:text-blue-500 rounded-lg transition-all duration-300"
                 >
                   {item}
                 </button>
