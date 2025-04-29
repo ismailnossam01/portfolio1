@@ -58,7 +58,7 @@ function App() {
     </a>
   </div>
   <a
-    href="https://drive.google.com/file/d/18ltKuldV15qIIcc7fK2ONmR-SbP2OA6M/view?usp=drive_link"
+    href="https://drive.google.com/file/d/18ltKuldV15qIIcc7fK2ONmR-SbP2OA6M/view?usp=drive_link" target="_blank rel="noopener noreferrer"
     className="inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1 w-full"
   >
     View Resume
@@ -68,7 +68,7 @@ function App() {
           </div>
 
           <FloatingImage
-            src="https://i.ibb.co/rsc8Q7S/IMG-20250113-204136.jpg"
+            src="https://i.ibb.co/LDX6xfLB/Whats-App-Image-2025-04-26-at-13-20-09-8e839601.jpg"
             alt="Ismail Nossam"
           />
         </div>
