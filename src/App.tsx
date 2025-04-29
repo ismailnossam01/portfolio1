@@ -42,28 +42,29 @@ function App() {
             </div>
 
             {/* Corrected button section */}
-            <div className="flex flex-col sm:space-y-0 space-y-4">
-              <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
-                <a
-                  href="mailto:ismailnossam@gmail.com"
-                  className="flex-1 inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-500 text-white font-semibold hover:from-blue-500 hover:to-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                >
-                  Hire Me
-                </a>
-                <a
-                  href="#contact"
-                  className="flex-1 inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1"
-                >
-                  Contact
-                </a>
-              </div>
-              <a
-                href="#"
-                className="mt-4 inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1 w-full sm:w-auto"
-              >
-                View Resumeee
-              </a>
-            </div>
+            <div className="flex flex-col sm:flex-col items-start sm:items-stretch space-y-4 mt-6 w-full">
+  <div className="flex flex-col sm:flex-row sm:space-x-4 w-full">
+    <a
+      href="mailto:ismailnossam@gmail.com"
+      className="flex-1 inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-500 text-white font-semibold hover:from-blue-500 hover:to-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full"
+    >
+      Hire Me
+    </a>
+    <a
+      href="#contact"
+      className="flex-1 inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1 w-full mt-4 sm:mt-0"
+    >
+      Contact
+    </a>
+  </div>
+  <a
+    href="#"
+    className="inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1 w-full"
+  >
+    View Resume
+  </a>
+</div>
+
 
           </div>
 
