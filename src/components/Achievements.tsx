@@ -23,7 +23,7 @@ const achievements: Achievement[] = [
     demo: "https://drive.google.com/file/d/CSEHackathonDemoLink"
   },
   {
-    title: "Participated in CODEQUEST 24-Hour Hackathon on campus",
+    title: "Participated in CODEQUEST 24-Hour Hackathon on campus", 
     icon: <Award className="text-blue-500" />, // Set the icon color to blue
     github: "https://github.com/ismailnossam01/Codequest24Hack",
     demo: "https://drive.google.com/file/d/CodequestDemoLink"
