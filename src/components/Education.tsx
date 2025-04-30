@@ -13,7 +13,7 @@ const educationData = [
     institution: "Nxtwave Academy",
     period: "2022-Ongoing",
     degree: "Industry-Ready Certification",
-    details: "Full-stack Development with Specialization in AI & ML and Data Science",
+    details: "Full-stack Development with Specialization in AI/ML and Data Science",
     icon: Book
   }
 ];
