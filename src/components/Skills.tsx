@@ -21,11 +21,7 @@ const skillsData = {
       Database: ["SQL", "MongoDB"]
     }
   },
-  tools: {
-    title: "Tools/Platforms",
-    icon: Wrench,
-    skills: ["Jupyter Notebook", "GitHub", "Power BI", "FrameVR", "Hugging Face", "Voiceflow", "Visual Studio Code"]
-  },
+  
   softSkills: {
     title: "Soft Skills & Languages",
     icon: MessageSquare,
@@ -34,13 +30,16 @@ const skillsData = {
       Languages: ["English", "Hindi", "Telugu"]
     }
   },
+  tools: {
+    title: "Tools/Platforms",
+    icon: Wrench,
+    skills: ["Jupyter Notebook", "GitHub", "Power BI", "FrameVR", "Hugging Face", "Voiceflow", "Visual Studio Code"]
+  },
   aiUtil: {
     title: "AI Utilization",
     icon: Sparkles,
     skills: [
-      "Effective use of AI tools to automate tasks",
-      "Enhance productivity through smart workflows",
-      "Build impactful, real-world AI-based solutions"
+      "Effective use of AI tools to automate tasks, enhance productivity, and build impactful, real-world solutions."
     ]
   }
 };
