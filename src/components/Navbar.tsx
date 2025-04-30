@@ -47,7 +47,7 @@ const Navbar = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="text-white text-lg font-medium px-3 py-1.5 rounded-full transition-all duration-300 hover:bg-white hover:text-blue-500"
+                className="text-white text-m font-medium px-3 py-1.5 rounded-full transition-all duration-300 hover:bg-white hover:text-blue-500"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </button>
