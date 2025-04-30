@@ -40,7 +40,7 @@ const WorkExperience = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   title="GitHub Repo"
-                  className="p-2 rounded-full bg-gray-100 hover:bg-black hover:text-white transition duration-300"
+                  className="p-2 rounded-full bg-blue-100 hover:bg-blue-600 hover:text-white transition duration-300"
                 >
                   <Github size={18} />
                 </a>
