@@ -30,7 +30,8 @@ const achievements: Achievement[] = [
   },
   {
     title: "1st Prize in coding competitions: 1st-year (among 100+ participants) and 2nd-year (among 180+ participants).",
-    icon: <Trophy className="text-blue-500" />
+    icon: <Trophy className="text-blue-500" />,
+    drive: "https://drive.google.com/drive/folders/1MeritCertDriveFolderLink"
   },
   {
     title: "Merit Prizes in paper and poster presentations. (among 80 participants)",
@@ -39,7 +40,8 @@ const achievements: Achievement[] = [
   },
   {
     title: "Patent applied for wireless data transfer to a pendrive",
-    icon: <Trophy className="text-blue-500" />
+    icon: <Trophy className="text-blue-500" />,
+    drive: "https://drive.google.com/drive/folders/1MeritCertDriveFolderLink"
   }
 ];
 
