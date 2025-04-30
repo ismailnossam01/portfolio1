@@ -6,6 +6,7 @@ interface Achievement {
   icon: JSX.Element;
   github?: string;
   demo?: string;
+  drive?: string;
 }
 
 const achievements: Achievement[] = [
@@ -22,23 +23,25 @@ const achievements: Achievement[] = [
     demo: "https://drive.google.com/file/d/CSEHackathonDemoLink"
   },
   {
-    title: "Champion in inter-departmental coding competitions (3 times)",
-    icon: <Trophy className="text-green-500" />
-  },
-  {
-    title: "Merit Prizes in college paper and poster presentations",
-    icon: <FileBadge className="text-purple-500" />,
-    demo: "https://drive.google.com/drive/folders/1MeritCertDriveFolderLink"
-  },
-  {
-    title: "Patent applied for wireless data transfer to a pendrive",
-    icon: <Trophy className="text-red-500" />
-  },
-  {
     title: "Participated in CODEQUEST 24-Hour Hackathon on campus",
     icon: <Award className="text-blue-500" />,
     github: "https://github.com/ismailnossam01/Codequest24Hack",
     demo: "https://drive.google.com/file/d/CodequestDemoLink"
+  },
+  {
+    title: "1st Prize in coding competitions: 1st-year (100+ participants) and 2nd-year (180+ participants)",
+    icon: <Trophy className="text-green-500" />,
+    drive: "https://drive.google.com/drive/folders/1CodingPrizeDriveLink"
+  },
+  {
+    title: "Merit Prizes in paper and poster presentations (80 participants)",
+    icon: <FileBadge className="text-purple-500" />,
+    drive: "https://drive.google.com/drive/folders/1MeritCertDriveFolderLink"
+  },
+  {
+    title: "Patent applied for wireless data transfer to a pendrive",
+    icon: <Trophy className="text-red-500" />,
+    drive: "https://drive.google.com/file/d/PatentDocumentLink"
   }
 ];
 
@@ -75,6 +78,17 @@ const Achievements = () => {
                     className="p-2 rounded-full bg-blue-100 hover:bg-blue-600 hover:text-white transition duration-300"
                   >
                     <MonitorPlay size={18} />
+                  </a>
+                )}
+                {exp.drive && !exp.github && !exp.demo && (
+                  <a
+                    href={exp.drive}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="View Document"
+                    className="p-2 rounded-full bg-blue-100 hover:bg-blue-600 hover:text-white transition duration-300"
+                  >
+                    <FileBadge size={18} />
                   </a>
                 )}
               </div>
