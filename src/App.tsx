@@ -91,7 +91,7 @@ function App() {
         </Section>
 
         {/* Experience Section */}
-        <Section title="Experience" id="experience">
+        <Section title="Work Experience" id="experience">
           <WorkExperience />
         </Section>
 
