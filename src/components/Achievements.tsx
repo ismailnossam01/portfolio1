@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trophy, Medal, Award, FileBadge, Github, MonitorPlay, Drive } from 'lucide-react';
+import { Trophy, Medal, Award, FileBadge, Github, MonitorPlay, File } from 'lucide-react'; // Replace Drive with File
 
 interface Achievement {
   title: string;
@@ -12,34 +12,34 @@ interface Achievement {
 const achievements: Achievement[] = [
   {
     title: "1st Prize in 3-hour GDG Hackathon among 40 teams (3-member team)",
-    icon: <Medal className="text-blue-500" />, // Set the icon color to blue
+    icon: <Medal className="text-blue-500" />,
     github: "https://github.com/ismailnossam01/GDGHackathonProject",
     demo: "https://drive.google.com/file/d/GDGHackathonDemoLink"
   },
   {
     title: "3rd Prize in 24-hour CSE Dept Hackathon among 90 teams (5-member team)",
-    icon: <Award className="text-blue-500" />, // Set the icon color to blue
+    icon: <Award className="text-blue-500" />,
     github: "https://github.com/ismailnossam01/CSEHackathonProject",
     demo: "https://drive.google.com/file/d/CSEHackathonDemoLink"
   },
   {
-    title: "Participated in CODEQUEST 24-Hour Hackathon on campus", 
-    icon: <Award className="text-blue-500" />, // Set the icon color to blue
+    title: "Participated in CODEQUEST 24-Hour Hackathon on campus",
+    icon: <Award className="text-blue-500" />,
     github: "https://github.com/ismailnossam01/Codequest24Hack",
     demo: "https://drive.google.com/file/d/CodequestDemoLink"
   },
   {
     title: "1st Prize in coding competitions: 1st-year (among 100+ participants) and 2nd-year (among 180+ participants).",
-    icon: <Trophy className="text-blue-500" /> // Set the icon color to blue
+    icon: <Trophy className="text-blue-500" />
   },
   {
     title: "Merit Prizes in paper and poster presentations. (among 80 participants)",
-    icon: <FileBadge className="text-blue-500" />, // Set the icon color to blue
+    icon: <FileBadge className="text-blue-500" />,
     drive: "https://drive.google.com/drive/folders/1MeritCertDriveFolderLink"
   },
   {
     title: "Patent applied for wireless data transfer to a pendrive",
-    icon: <Trophy className="text-blue-500" /> // Set the icon color to blue
+    icon: <Trophy className="text-blue-500" />
   }
 ];
 
@@ -51,7 +51,7 @@ const Achievements = () => {
           key={index}
           className="flex items-start space-x-3 bg-blue-50 p-4 rounded-lg shadow-lg hover:scale-100 hover:shadow-2xl hover:translate-y-[-10px] transition-all duration-300 ease-in-out transform"
         >
-          <div className="mt-1">{exp.icon}</div> {/* This is where the icon color is set */}
+          <div className="mt-1">{exp.icon}</div>
           <div className="flex-grow">
             <div className="flex justify-between items-center">
               <p className="text-gray-700">{exp.title}</p>
@@ -86,7 +86,7 @@ const Achievements = () => {
                     title="View Document"
                     className="p-2 rounded-full bg-blue-100 hover:bg-blue-600 hover:text-white transition duration-300"
                   >
-                    <Drive size={18} />
+                    <File size={18} /> {/* Replaced Drive with File */}
                   </a>
                 )}
               </div>
