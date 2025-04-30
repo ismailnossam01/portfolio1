@@ -80,10 +80,7 @@ function App() {
         <Section title="Professional Summary" id="professional-summary">
           <div className="bg-blue-50 p-8 rounded-lg shadow-lg hover:scale-100 hover:shadow-2xl hover:translate-y-[-10px] transition-all duration-300 ease-in-out transform">
             <p className="leading-relaxed text-gray-800">
-              B.Tech Computer Science and Engineering (Artificial Intelligence and Machine Learning) student with strong skills in Web
-Development (MERN Stack), Data Structures and Algorithms. Experienced in hands-on projects and passionate about solving
-real-world problems through innovative, AI-driven solutions. Quick learner, adaptable, and eager to grow both personally and
-professionally.
+              B.Tech Computer Science and Engineering (Artificial Intelligence and Machine Learning) student with a strong foundation in AI/ML concepts and a passion for robotics. Skilled in Web Development (MERN Stack) and Data Structures and Algorithms. Experienced in hands-on projects and passionate about solving real-world problems with innovative, AI-powered solutions. A quick learner, adaptable, and eager to grow both personally and professionally.
             </p>
           </div>
         </Section>
