@@ -13,20 +13,23 @@ const achievements: Achievement[] = [
   {
     title: "1st Prize in 3-hour GDG Hackathon among 40 teams (3-member team)",
     icon: <Medal className="text-blue-500" />,
-    github: "https://github.com/ismailnossam01/GDGHackathonProject",
-    demo: "https://drive.google.com/file/d/GDGHackathonDemoLink"
+    github: "https://github.com/ismailnossam01/EventHub",
+    demo: "https://eventhubv2.netlify.app",
+    drive:"https://drive.google.com/file/d/16FCNT179Z6RZJ9ivaGbED2N_5kloS9dd/view?usp=sharing"
   },
   {
     title: "3rd Prize in 24-hour CSE Dept Hackathon among 90 teams (5-member team)",
     icon: <Award className="text-blue-500" />,
-    github: "https://github.com/ismailnossam01/CSEHackathonProject",
-    demo: "https://drive.google.com/file/d/CSEHackathonDemoLink"
+    github: "https://github.com/ismailnossam01/UniConnect",
+    demo: "https://drive.google.com/file/d/16Dmi2CNxL-7X4WHIBIroRoqVBFU5rrEr/view?usp=sharing",
+    drive: "https://drive.google.com/file/d/16AmcysUDc0Z8VdcP6srTCZr13Nt2GR0k/view?usp=sharing"
   },
   {
     title: "Participated in CODEQUEST 24-Hour Hackathon on campus",
     icon: <Award className="text-blue-500" />,
-    github: "https://github.com/ismailnossam01/Codequest24Hack",
-    demo: "https://drive.google.com/file/d/CodequestDemoLink"
+    github: "https://github.com/ismailnossam01/learntrack",
+    demo: "https://learntrack.vercel.app",
+    drive: "https://drive.google.com/file/d/16A210J97X8m6Yt8cW8CNhsU10U9C7vQh/view?usp=sharing"
   },
   {
     title: "1st Prize in coding competitions: 1st-year (among 100+ participants) and 2nd-year (among 180+ participants).",
