@@ -5,7 +5,7 @@ const educationData = [
   {
     institution: "Rajeev Gandhi Memorial College of Engineering and Technology, Nandyal",
     period: "2022-2026",
-    degree: "B.Tech in Computer Science and Engineering (AI&ML)",
+    degree: "B.Tech in Computer Science and Engineering (AI & ML)",
     details: "CGPA: 7.4",
     icon: GraduationCap
   },
@@ -13,7 +13,7 @@ const educationData = [
     institution: "Nxtwave Academy",
     period: "2022-Ongoing",
     degree: "Industry-Ready Certification",
-    details: "Full-stack Development with Specialization in AI/ML and Data Science",
+    details: "Full-stack Development with Specialization in AI & ML and Data Science",
     icon: Book
   }
 ];
