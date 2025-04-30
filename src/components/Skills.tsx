@@ -16,7 +16,7 @@ const skillsData = {
     title: "Web Development",
     icon: Code,
     skills: {
-      Frontend: ["HTML5", "CSS3", "JavaScript", "ReactJS"],
+      Frontend: ["HTML5", "CSS3", "JavaScript", "ReactJS", "Bootstrap","Tailwind CSS"],
       Backend: ["NodeJS", "Flask", ".NET Technologies"],
       Database: ["SQL", "MongoDB"]
     }
