@@ -15,7 +15,7 @@ const achievements: Achievement[] = [
     icon: <Medal className="text-blue-500" />,
     github: "https://github.com/ismailnossam01/EventHub",
     demo: "https://eventhubv2.netlify.app",
-    drive:"https://drive.google.com/file/d/16FCNT179Z6RZJ9ivaGbED2N_5kloS9dd/view?usp=sharing"
+    drive: "https://drive.google.com/file/d/16FCNT179Z6RZJ9ivaGbED2N_5kloS9dd/view?usp=sharing"
   },
   {
     title: "3rd Prize in 24-hour CSE Dept Hackathon among 90 teams (5-member team)",
@@ -83,7 +83,7 @@ const Achievements = () => {
                     <MonitorPlay size={18} />
                   </a>
                 )}
-                {exp.drive && !exp.github && !exp.demo && (
+                {exp.drive && (
                   <a
                     href={exp.drive}
                     target="_blank"
@@ -91,7 +91,7 @@ const Achievements = () => {
                     title="View Document"
                     className="p-2 rounded-full bg-blue-100 hover:bg-blue-600 hover:text-white transition duration-300"
                   >
-                    <File size={18} /> {/* This will be only for Merit Prizes */}
+                    <File size={18} />
                   </a>
                 )}
               </div>
