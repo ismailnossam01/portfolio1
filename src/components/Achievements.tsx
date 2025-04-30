@@ -1,117 +1,87 @@
 import React from 'react';
-import { Trophy, ExternalLink, Github, MonitorPlay, Lightbulb } from 'lucide-react';
+import { Trophy, Medal, Award, FileBadge, Github, MonitorPlay } from 'lucide-react';
 
 interface Achievement {
   title: string;
-  link?: string;
+  icon: JSX.Element;
   github?: string;
   demo?: string;
-  category: "general" | "hackathon";
 }
 
 const achievements: Achievement[] = [
-  // Hackathon Achievements
   {
-    title: "1st Prize in 3-hour GDG Hackathon (40 teams, 3-member team)",
-    category: "hackathon",
-    github: "https://github.com/ismailnossam01/GDG-Hackathon", // replace actual
-    demo: "https://gdg-demo-link.com", // replace actual
+    title: "1st Prize in 3-hour GDG Hackathon among 40 teams (3-member team)",
+    icon: <Medal className="text-yellow-500" />,
+    github: "https://github.com/ismailnossam01/GDGHackathonProject",
+    demo: "https://drive.google.com/file/d/GDGHackathonDemoLink"
   },
   {
-    title: "3rd Prize in 24-hour CSE Dept Hackathon (90 teams, 5-member team)",
-    category: "hackathon",
-    github: "https://github.com/ismailnossam01/CSEHackathon", // replace actual
-    demo: "https://cse-hackathon-demo.com", // replace actual
+    title: "3rd Prize in 24-hour CSE Dept Hackathon among 90 teams (5-member team)",
+    icon: <Award className="text-orange-500" />,
+    github: "https://github.com/ismailnossam01/CSEHackathonProject",
+    demo: "https://drive.google.com/file/d/CSEHackathonDemoLink"
   },
-  {
-    title: "Participant in Smart India Hackathon",
-    category: "hackathon",
-    demo: "https://sih-demo-link.com", // optional
-  },
-  {
-    title: "Participated in CODEQUEST 24-Hour Hackathon on campus",
-    category: "hackathon"
-  },
-
-  // General Achievements
   {
     title: "Champion in inter-departmental coding competitions (3 times)",
-    category: "general",
-    link: "#"
+    icon: <Trophy className="text-green-500" />
   },
   {
-    title: "1st Prize in 1st & 2nd year college coding contests (100+ & 180+ participants)",
-    category: "general"
-  },
-  {
-    title: "Merit Prizes in paper and poster presentations (among 80 participants)",
-    category: "general",
-    link: "#"
+    title: "Merit Prizes in college paper and poster presentations",
+    icon: <FileBadge className="text-purple-500" />,
+    demo: "https://drive.google.com/drive/folders/1MeritCertDriveFolderLink"
   },
   {
     title: "Patent applied for wireless data transfer to a pendrive",
-    category: "general",
-    link: "#"
+    icon: <Trophy className="text-red-500" />
+  },
+  {
+    title: "Participated in CODEQUEST 24-Hour Hackathon on campus",
+    icon: <Award className="text-blue-500" />,
+    github: "https://github.com/ismailnossam01/Codequest24Hack",
+    demo: "https://drive.google.com/file/d/CodequestDemoLink"
   }
 ];
 
 const Achievements = () => {
   return (
-    <div className="space-y-6">
-      {/* Hackathon Achievements */}
-      <div>
-        <h2 className="text-lg font-semibold text-blue-600 mb-2 flex items-center gap-2">
-          <Lightbulb className="text-yellow-500" size={18} /> Hackathon Achievements
-        </h2>
-        <div className="space-y-3">
-          {achievements.filter(a => a.category === "hackathon").map((achievement, index) => (
-            <div key={index} className="flex items-start space-x-3 bg-blue-50 p-4 rounded-lg shadow-md hover:scale-100 hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
-              <Trophy className="text-purple-500 mt-1" size={20} />
-              <div className="flex-grow">
-                <div className="flex items-center justify-between">
-                  <p className="text-gray-800">{achievement.title}</p>
-                  <div className="flex space-x-2">
-                    {achievement.github && (
-                      <a href={achievement.github} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black">
-                        <Github size={18} />
-                      </a>
-                    )}
-                    {achievement.demo && (
-                      <a href={achievement.demo} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">
-                        <MonitorPlay size={18} />
-                      </a>
-                    )}
-                  </div>
-                </div>
+    <div className="space-y-4">
+      {achievements.map((exp, index) => (
+        <div
+          key={index}
+          className="flex items-start space-x-3 bg-blue-50 p-4 rounded-lg shadow-lg hover:scale-100 hover:shadow-2xl hover:translate-y-[-10px] transition-all duration-300 ease-in-out transform"
+        >
+          <div className="mt-1">{exp.icon}</div>
+          <div className="flex-grow">
+            <div className="flex justify-between items-center">
+              <p className="text-gray-700">{exp.title}</p>
+              <div className="flex space-x-2">
+                {exp.github && (
+                  <a
+                    href={exp.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="GitHub Repo"
+                    className="p-2 rounded-full bg-blue-100 hover:bg-blue-600 hover:text-white transition duration-300"
+                  >
+                    <Github size={18} />
+                  </a>
+                )}
+                {exp.demo && (
+                  <a
+                    href={exp.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="View Demo"
+                    className="p-2 rounded-full bg-blue-100 hover:bg-blue-600 hover:text-white transition duration-300"
+                  >
+                    <MonitorPlay size={18} />
+                  </a>
+                )}
               </div>
             </div>
-          ))}
+          </div>
         </div>
-      </div>
-
-      {/* General Achievements */}
-      <div>
-        <h2 className="text-lg font-semibold text-blue-600 mb-2 flex items-center gap-2">
-          <Trophy className="text-blue-500" size={18} /> Other Achievements
-        </h2>
-        <div className="space-y-3">
-          {achievements.filter(a => a.category === "general").map((achievement, index) => (
-            <div key={index} className="flex items-start space-x-3 bg-blue-50 p-4 rounded-lg shadow-md hover:scale-100 hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
-              <Trophy className="text-blue-500 mt-1" size={20} />
-              <div className="flex-grow">
-                <div className="flex items-center justify-between">
-                  <p className="text-gray-800">{achievement.title}</p>
-                  {achievement.link && (
-                    <a href={achievement.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">
-                      <ExternalLink size={18} />
-                    </a>
-                  )}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      ))}
     </div>
   );
 };
