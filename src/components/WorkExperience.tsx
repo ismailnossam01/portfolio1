@@ -18,8 +18,8 @@ const experiences: Experience[] = [
     period: "OCT-DEC 2024",
     description: "Developed an Attendance Reporting App in ASP.NET Core MVC with SQL Server for task allocation and attendance tracking. Collaborated with a team of three to integrate Generative AI tools for code automation, enhancing development speed and efficiency.",
     techStack: ["ASP.NET Core MVC", "C#", "SQL Server", "Generative AI Tools"],
-    github: "https://github.com/ismailnossam01/attendance-app", // replace with actual repo
-    demo: "https://attendance-demo.netlify.app" // optional, replace with actual link
+    github: "https://github.com/ismailnossam01/ATEngineersAttendanceProject", // replace with actual repo
+    demo: "https://drive.google.com/drive/u/1/folders/1jt4iQJscNxdYcuLKcAi2VR592iJlIaOA" // optional, replace with actual link
   }
 ];
 
