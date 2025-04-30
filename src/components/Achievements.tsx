@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trophy, Medal, Award, FileBadge, Github, MonitorPlay, File } from 'lucide-react'; // Replace Drive with File
+import { Trophy, Medal, Award, FileBadge, Github, MonitorPlay, File } from 'lucide-react'; // Import icons
 
 interface Achievement {
   title: string;
@@ -86,7 +86,7 @@ const Achievements = () => {
                     title="View Document"
                     className="p-2 rounded-full bg-blue-100 hover:bg-blue-600 hover:text-white transition duration-300"
                   >
-                    <File size={18} /> {/* Replaced Drive with File */}
+                    <File size={18} /> {/* This will be only for Merit Prizes */}
                   </a>
                 )}
               </div>
