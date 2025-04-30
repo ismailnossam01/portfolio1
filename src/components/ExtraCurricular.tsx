@@ -3,24 +3,19 @@ import { Users, Mic, Star } from 'lucide-react';
 
 const activities = [
   {
-    title: "Student Coordinator",
+    title: "Student Coordinator IIC-RGMCET",
     description: "Organized events as a Student Coordinator in the Institution Innovation Council (IIC).",
     icon: Users
   },
   {
-    title: "Entrepreneurship Engagement",
-    description: "Engaged in entrepreneurship sessions and podcasts.",
-    icon: Mic
-  },
-  {
-    title: "Club Activities",
-    description: "Active member of departmental clubs, contributing to various initiatives and activities.",
+    title: "Events & Club Activities",
+    description: "Active member of departmental clubs & Events, contributing to various initiatives and activities.",
     icon: Star
   },
   {
-    title: "Student Coordinator",
-    description: "Organized events as a Student Coordinator in the Institution Innovation Council (IIC).",
-    icon: Users
+    title: "Entrepreneurship & Knowledge Engagement",
+    description: "Actively engage in technical, non-technical, and entrepreneurship podcasts and sessions to enhance skills and expand knowledge.",
+    icon: Mic
   }
 ];
 
