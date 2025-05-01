@@ -9,8 +9,8 @@ const allProjects = [
     description: "Text-based interaction using LLMs, LangChain and Hugging Face.",
     techStack: ["LLMs", "LangChain", "Hugging Face","Open AI"],
     icon: Brain,
-    github: "https://github.com/ismailnossam01/GenAI-Models",
-    demo: "https://genai-text-demo.com"
+    github: "https://github.com/ismailnossam01/Text-Speech-AI",
+    demo: "https://textkohi.ccbp.tech"
   },
   {
     category: "AI Projects",
@@ -18,8 +18,8 @@ const allProjects = [
     description: "Voice-based interaction using LLMs and TTS with LangChain pipeline.",
     techStack: ["LLMs", "LangChain", "TTS", "Hugging Face","Play HT"],
     icon: Brain,
-    github: "https://github.com/ismailnossam01/GenAI-Models",
-    demo: "https://genai-voice-demo.com"
+    github: "https://github.com/ismailnossam01/Text-Speech-AI",
+    demo: "https://tellkohi.ccbp.tech"
   },
   {
     category: "AI Projects",
@@ -27,8 +27,8 @@ const allProjects = [
     description: "Voice-activated assistant for real-time book queries with speech recognition.",
     techStack: ["Python", "Speech Recognition", "TTS", "Pandas"],
     icon: BookOpen,
-    github: "#",
-    demo: "https://library-assistant-demo.com"
+    github: "https://github.com/ismailnossam01/Library-Assistant-Mini-Nila",
+    demo: "https://drive.google.com/file/d/1NAjhjZxGpcYQkIrGSBdXbThm4vn6_n9A/view?usp=sharing"
   },
   {
     category: "AI Projects",
@@ -36,8 +36,8 @@ const allProjects = [
     description: "App for medicine details and alternatives using CSV-based quick lookup.",
     techStack: ["Python", "CSV File Handling"],
     icon: Stethoscope,
-    github: "#",
-    demo: "https://medicine-app-demo.com"
+    github: "https://github.com/ismailnossam01/MedicineAlternativesNLP",
+    demo: "https://drive.google.com/file/d/1NIiscIMqZugMsEthe1EEW-S1alaai7Dj/view?usp=sharing"
   },
   {
   category: "AI Projects",
@@ -46,7 +46,7 @@ const allProjects = [
   techStack: ["Python", "FastAPI", "Scikit-Learn", "TfidfVectorizer", "RandomForest", "HTML/CSS/JS", "BeautifulSoup"],
   icon: Brain,
   github: "https://github.com/ismailnossam01/job-verification-ai", // Update if needed
-  demo: "", // Optional - fill if deployed
+  demo: "https://drive.google.com/file/d/1mSvX8lWeurBw-qEWmaHPTWRNAjOH8mxv/view?usp=sharing", // Optional - fill if deployed
   isWinner:true
 },
 
@@ -96,7 +96,7 @@ const allProjects = [
     description: "Campus-wide hackathon building a Chatbot + VR + AI Job verification for the students.",
     techStack: ["MERN", "Vite", "FrameVR", "VoiceFlow"],
     icon: Brain,
-    github: "https://github.com/ismailnossam01/unified-portal",
+    github: "https://github.com/ismailnossam01/AIJobVerficationCSEHack",
     demo: "https://unifiedportal-demo.com",
     isWinner: true
   },
