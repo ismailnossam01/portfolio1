@@ -91,8 +91,8 @@ const allProjects = [
   },
   {
     category: "Hackathon Projects",
-    title: "GDG Hackathon - Event Listing Platform",
-    description: "Clean, responsive UI for event registration.",
+    title: "Event Listing Platform",
+    description: "In a Thrilling 3 Hour GDG Hackathon Designed a Clean, responsive UI for event registration.",
     techStack: ["ReactJS", "Vite"],
     icon: Globe,
     github: "https://github.com/ismailnossam01/event-listing",
