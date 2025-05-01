@@ -128,6 +128,14 @@ const allProjects = [
     techStack: ["Frame VR", "3D Modeling"],
     icon: Gamepad2,
     demo: "https://youtu.be/pQxfI-US4wY?si=aBFvDlmyHzenAsLO"
+  },
+   {
+    category: "Others",
+    title: "Shoot It Game",
+    description: "Created a small shooting game for the desktop using python programming.",
+    techStack: ["Frame VR", "3D Modeling"],
+    icon: Gamepad2,
+    demo: "https://drive.google.com/file/d/1NJh1JoEeNSXcvfYeYVYx03gIPqmB_0r1/view?usp=sharing"
   }
 ];
 
