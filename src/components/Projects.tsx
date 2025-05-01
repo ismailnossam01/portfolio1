@@ -18,7 +18,7 @@ const allProjects = [
     description: "Voice-based interaction using LLMs and TTS with LangChain pipeline.",
     techStack: ["LLMs", "LangChain", "TTS", "Hugging Face","Play HT"],
     icon: Brain,
-    github: "https://github.com/ismailnossam01/Text-Speech-AI",
+    github: "https://github.com/ismailnossam01/voiceresponseai",
     demo: "https://tellkohi.ccbp.tech"
   },
   {
@@ -55,11 +55,11 @@ const allProjects = [
   {
     category: "Web Development",
     title: "Department Website",
-    description: "Responsive AI/ML department website.",
+    description: "Responsive AI/ML department website which includes college chatbot.",
     techStack: ["HTML", "CSS", "JavaScript"],
     icon: Globe,
-    github: "#",
-    demo: "https://dept-website.com"
+    github: "https://github.com/ismailnossam01/AIMLDeptWebsite",
+    demo: "aimlbranchrgm.ccbp.tech"
   },
   {
     category: "Web Development",
@@ -67,8 +67,8 @@ const allProjects = [
     description: "My personal portfolio showcasing all projects and skills.",
     techStack: ["ReactJS", "Type Script","Vite"],
     icon: Globe,
-    github: "https://github.com/ismailnossam01/portfolio",
-    demo: "https://ismailnossam01.vercel.app"
+    github: "https://github.com/ismailnossam01/portfolio1",
+    demo: "https://ismailnportfolio.netlify.app"
   },
   {
     category: "Web Development",
@@ -76,8 +76,8 @@ const allProjects = [
     description: "Minimal, functional todo list with persistent storage.",
     techStack: ["HTML", "CSS", "JavaScript"],
     icon: Globe,
-    github: "#",
-    demo: "https://todo-app-demo.com"
+    github: "https://github.com/ismailnossam01/MiniTODO-LIST",
+    demo: "ismailtodo4.ccbp.tech"
   },
   {
     category: "Web Development",
@@ -85,8 +85,8 @@ const allProjects = [
     description: "Frontend project mimicking Swiggy/Zomato.",
     techStack: ["HTML", "CSS", "JavaScript"],
     icon: Globe,
-    github: "#",
-    demo: "https://foodmunch-demo.com"
+    github: "https://github.com/ismailnossam01/foodmunch",
+    demo: "kohifoodmunch.ccbp.tech"
   },
 
   // Hackathon Projects
