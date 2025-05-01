@@ -7,7 +7,7 @@ const allProjects = [
     category: "AI Projects",
     title: "Real-Time Text Chatbot",
     description: "Text-based interaction using LLMs, LangChain and Hugging Face.",
-    techStack: ["LLMs", "LangChain", "Hugging Face"],
+    techStack: ["LLMs", "LangChain", "Hugging Face","Open AI"],
     icon: Brain,
     github: "https://github.com/ismailnossam01/GenAI-Models",
     demo: "https://genai-text-demo.com"
@@ -16,7 +16,7 @@ const allProjects = [
     category: "AI Projects",
     title: "Real-Time Voice Assistant",
     description: "Voice-based interaction using LLMs and TTS with LangChain pipeline.",
-    techStack: ["LLMs", "LangChain", "TTS", "Hugging Face"],
+    techStack: ["LLMs", "LangChain", "TTS", "Hugging Face","Play HT"],
     icon: Brain,
     github: "https://github.com/ismailnossam01/GenAI-Models",
     demo: "https://genai-voice-demo.com"
@@ -45,7 +45,7 @@ const allProjects = [
     category: "Web Development",
     title: "Department Website",
     description: "Responsive AI/ML department website.",
-    techStack: ["HTML", "CSS", "JavaScript", "ReactJS"],
+    techStack: ["HTML", "CSS", "JavaScript"],
     icon: Globe,
     github: "#",
     demo: "https://dept-website.com"
@@ -54,7 +54,7 @@ const allProjects = [
     category: "Web Development",
     title: "Portfolio Website",
     description: "My personal portfolio showcasing all projects and skills.",
-    techStack: ["ReactJS", "Tailwind"],
+    techStack: ["ReactJS", "Type Script","Vite"],
     icon: Globe,
     github: "https://github.com/ismailnossam01/portfolio",
     demo: "https://ismailnossam01.vercel.app"
@@ -82,7 +82,7 @@ const allProjects = [
   {
     category: "Hackathon Projects",
     title: "Unified Student Portal",
-    description: "Chatbot + VR + AI verification to solve academic/job data issues.",
+    description: "Campus-wide hackathon building a Chatbot + VR + AI Job verification for the students.",
     techStack: ["MERN", "Vite", "FrameVR", "VoiceFlow"],
     icon: Brain,
     github: "https://github.com/ismailnossam01/unified-portal",
@@ -91,7 +91,7 @@ const allProjects = [
   },
   {
     category: "Hackathon Projects",
-    title: "Event Listing Platform",
+    title: "GDG Hackathon - Event Listing Platform",
     description: "Clean, responsive UI for event registration.",
     techStack: ["ReactJS", "Vite"],
     icon: Globe,
@@ -103,7 +103,7 @@ const allProjects = [
     category: "Hackathon Projects",
     title: "CODEQUEST 24-Hour Hackathon",
     description: "Participated in campus-wide hackathon building a full-stack project under 24 hours.",
-    techStack: ["React", "MongoDB", "Node.js"],
+    techStack: ["React", "Firebase", "Node.js", "Type Script"],
     icon: Gamepad2,
     github: "#",
     demo: "#"
@@ -116,7 +116,6 @@ const allProjects = [
     description: "Created a PUBG-themed virtual environment using Frame VR.",
     techStack: ["Frame VR", "3D Modeling"],
     icon: Gamepad2,
-    github: "#",
     demo: "https://vr-pubg-frame.com"
   }
 ];
