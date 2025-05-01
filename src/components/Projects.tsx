@@ -59,7 +59,7 @@ const allProjects = [
     techStack: ["HTML", "CSS", "JavaScript"],
     icon: Globe,
     github: "https://github.com/ismailnossam01/AIMLDeptWebsite",
-    demo: "aimlbranchrgm.ccbp.tech"
+    demo: "https://aimlbranchrgm.ccbp.tech"
   },
   {
     category: "Web Development",
@@ -77,7 +77,7 @@ const allProjects = [
     techStack: ["HTML", "CSS", "JavaScript"],
     icon: Globe,
     github: "https://github.com/ismailnossam01/MiniTODO-LIST",
-    demo: "ismailtodo4.ccbp.tech"
+    demo: "https://ismailtodo4.ccbp.tech"
   },
   {
     category: "Web Development",
@@ -86,7 +86,7 @@ const allProjects = [
     techStack: ["HTML", "CSS", "JavaScript"],
     icon: Globe,
     github: "https://github.com/ismailnossam01/foodmunch",
-    demo: "kohifoodmunch.ccbp.tech"
+    demo: "https://kohifoodmunch.ccbp.tech"
   },
 
   // Hackathon Projects
