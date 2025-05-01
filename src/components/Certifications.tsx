@@ -76,7 +76,7 @@ const Certifications = () => {
         <div
           key={idx}
           className="bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 ease-in-out transform"
-        > 
+        >
           <div className="flex items-center gap-3 mb-4">
             <div className="bg-blue-100 p-3 rounded-full">
               <block.icon className="text-blue-500 w-6 h-6" />
@@ -92,10 +92,11 @@ const Certifications = () => {
                 key={index}
                 className="bg-white p-4 rounded-2xl shadow-sm hover:shadow-md transition"
               >
-                <h4 className="text-gray-800 font-medium mb-3 flex items-center gap-2">
-                  <Award className="text-blue-400 w-4 h-4 group-hover:text-blue-600 transition" /> {cert.name}
-                </h4>
                 <div className="flex justify-between items-center">
+                  <h4 className="text-gray-800 font-medium mb-3 flex items-center gap-2">
+                    <Award className="text-blue-400 w-4 h-4 group-hover:text-blue-600 transition" /> 
+                    {cert.name}
+                  </h4>
                   <div className="flex gap-2">
                     <button
                       onClick={() => setPreviewUrl(cert.preview)}
