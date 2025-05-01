@@ -75,8 +75,8 @@ const Certifications = () => {
       {certifications.map((block, idx) => (
         <div
           key={idx}
-          className="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300"
-        >
+          className="bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 ease-in-out transform"
+        > 
           <div className="flex items-center gap-3 mb-4">
             <div className="bg-blue-100 p-3 rounded-full">
               <block.icon className="text-blue-500 w-6 h-6" />
