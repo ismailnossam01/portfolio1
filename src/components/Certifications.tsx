@@ -92,11 +92,11 @@ const certifications = [
 
 const Certifications = () => {
   return (
-    <div className="space-y-10 bg-blue-50 p-6 rounded-xl">
+    <div className="space-y-10">
       {certifications.map((block, idx) => (
         <div
           key={idx}
-          className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300"
+          className="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300"
         >
           <div className="flex items-center gap-3 mb-4">
             <div className="bg-blue-100 p-3 rounded-full">
@@ -111,7 +111,7 @@ const Certifications = () => {
             {block.certs.map((cert, index) => (
               <div
                 key={index}
-                className="bg-blue-50 p-4 rounded-xl shadow-sm hover:shadow-md transition"
+                className="bg-white p-4 rounded-2xl shadow-sm hover:shadow-md transition"
               >
                 <h4 className="text-gray-800 font-medium mb-3 flex items-center gap-2">
                   <Award className="text-blue-400 w-4 h-4" /> {cert.name}
