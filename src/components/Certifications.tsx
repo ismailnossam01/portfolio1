@@ -95,21 +95,23 @@ const Certifications = () => {
                 <h4 className="text-gray-800 font-medium mb-3 flex items-center gap-2">
                   <Award className="text-blue-400 w-4 h-4 group-hover:text-blue-600 transition" /> {cert.name}
                 </h4>
-                <div className="flex gap-2">
-                  <button
-                    onClick={() => setPreviewUrl(cert.preview)}
-                    className="flex items-center gap-1 bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full hover:bg-blue-600 hover:text-white transition"
-                  >
-                    <Eye size={14} /> Preview
-                  </button>
-                  <a
-                    href={cert.verify}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full hover:bg-blue-600 hover:text-white transition"
-                  >
-                    <CheckCircle size={14} /> Verify
-                  </a>
+                <div className="flex justify-between items-center">
+                  <div className="flex gap-2">
+                    <button
+                      onClick={() => setPreviewUrl(cert.preview)}
+                      className="flex items-center gap-1 bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-200"
+                    >
+                      <Eye size={14} /> Preview
+                    </button>
+                    <a
+                      href={cert.verify}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-200"
+                    >
+                      <CheckCircle size={14} /> Verify
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
