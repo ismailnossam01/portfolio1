@@ -81,7 +81,8 @@ const allProjects = [
     techStack: ["ReactJS", "Vite"],
     icon: Globe,
     github: "https://github.com/ismailnossam01/event-listing",
-    demo: "https://eventplatform-demo.com"
+    demo: "https://eventplatform-demo.com",
+    isWinner: true
   },
   {
     category: "Hackathon Projects",
