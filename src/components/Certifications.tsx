@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Eye,
   CheckCircle,
   Award,
   BrainCircuit,
   CloudSun,
-  GraduationCap
+  GraduationCap,
+  X
 } from "lucide-react";
 
 const certifications = [
@@ -13,86 +14,64 @@ const certifications = [
     provider: "Nxtwave",
     icon: BrainCircuit,
     certs: [
-      {
-        name: "Python",
-        preview: "https://drive-link.com/python-preview",
-        verify: "https://verify-link.com/python"
-      },
-      {
-        name: "Static and Responsive web development",
-        preview: "https://drive-link.com/static-web",
-        verify: "https://verify-link.com/static-web"
-      },
-      {
-        name: "Developer Foundations",
-        preview: "https://drive-link.com/foundations",
-        verify: "https://verify-link.com/foundations"
-      },
-      {
-        name: "JavaScript",
-        preview: "https://drive-link.com/js",
-        verify: "https://verify-link.com/js"
-      },
-      {
-        name: "ReactJS",
-        preview: "https://drive-link.com/react",
-        verify: "https://verify-link.com/react"
-      },
-      {
-        name: "NodeJS",
-        preview: "https://drive-link.com/node",
-        verify: "https://verify-link.com/node"
-      },
-      {
-        name: "SQL",
-        preview: "https://drive-link.com/sql",
-        verify: "https://verify-link.com/sql"
-      }
+      { name: "Python", preview: "https://drive-link.com/python-preview", verify: "https://verify-link.com/python" },
+      { name: "Static and Responsive web development", preview: "https://drive-link.com/static-web", verify: "https://verify-link.com/static-web" },
+      { name: "Developer Foundations", preview: "https://drive-link.com/foundations", verify: "https://verify-link.com/foundations" },
+      { name: "JavaScript", preview: "https://drive-link.com/js", verify: "https://verify-link.com/js" },
+      { name: "ReactJS", preview: "https://drive-link.com/react", verify: "https://verify-link.com/react" },
+      { name: "NodeJS", preview: "https://drive-link.com/node", verify: "https://verify-link.com/node" },
+      { name: "SQL", preview: "https://drive-link.com/sql", verify: "https://verify-link.com/sql" }
     ]
   },
   {
     provider: "NPTEL",
     icon: GraduationCap,
     certs: [
-      {
-        name: "IOT",
-        preview: "https://drive-link.com/iot",
-        verify: "https://verify-link.com/iot"
-      },
-      {
-        name: "Soft Skills",
-        preview: "https://drive-link.com/soft-skills",
-        verify: "https://verify-link.com/soft-skills"
-      }
+      { name: "IOT", preview: "https://drive-link.com/iot", verify: "https://verify-link.com/iot" },
+      { name: "Soft Skills", preview: "https://drive-link.com/soft-skills", verify: "https://verify-link.com/soft-skills" }
     ]
   },
   {
     provider: "Coursera",
     icon: CloudSun,
     certs: [
-      {
-        name: "Google AI Essentials",
-        preview: "https://drive-link.com/google-ai",
-        verify: "https://verify-link.com/google-ai"
-      }
+      { name: "Google AI Essentials", preview: "https://drive-link.com/google-ai", verify: "https://verify-link.com/google-ai" }
     ]
   },
   {
     provider: "Microsoft",
     icon: Award,
     certs: [
-      {
-        name: "Azure AI Fundamentals",
-        preview: "https://drive-link.com/azure-ai",
-        verify: "https://verify-link.com/azure-ai"
-      }
+      { name: "Azure AI Fundamentals", preview: "https://drive-link.com/azure-ai", verify: "https://verify-link.com/azure-ai" }
     ]
   }
 ];
 
 const Certifications = () => {
+  const [previewUrl, setPreviewUrl] = useState(null);
+
   return (
     <div className="space-y-10">
+      {previewUrl && (
+        <div className="fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center">
+          <div className="relative bg-white p-4 rounded-xl shadow-lg w-[90%] h-[90%]">
+            <button
+              className="absolute top-2 right-2 text-gray-700 hover:text-red-500"
+              onClick={() => setPreviewUrl(null)}
+            >
+              <X size={20} />
+            </button>
+            <iframe
+              src={previewUrl}
+              title="Certificate Preview"
+              className="w-full h-full rounded-md border"
+              frameBorder="0"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
+
       {certifications.map((block, idx) => (
         <div
           key={idx}
@@ -114,22 +93,20 @@ const Certifications = () => {
                 className="bg-white p-4 rounded-2xl shadow-sm hover:shadow-md transition"
               >
                 <h4 className="text-gray-800 font-medium mb-3 flex items-center gap-2">
-                  <Award className="text-blue-400 w-4 h-4" /> {cert.name}
+                  <Award className="text-blue-400 w-4 h-4 group-hover:text-blue-600 transition" /> {cert.name}
                 </h4>
                 <div className="flex gap-2">
-                  <a
-                    href={cert.preview}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 bg-blue-500 text-white text-sm px-3 py-1 rounded-full hover:bg-blue-600 transition"
+                  <button
+                    onClick={() => setPreviewUrl(cert.preview)}
+                    className="flex items-center gap-1 bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full hover:bg-blue-600 hover:text-white transition"
                   >
                     <Eye size={14} /> Preview
-                  </a>
+                  </button>
                   <a
                     href={cert.verify}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 bg-blue-500 text-white text-sm px-3 py-1 rounded-full hover:bg-blue-600 transition"
+                    className="flex items-center gap-1 bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full hover:bg-blue-600 hover:text-white transition"
                   >
                     <CheckCircle size={14} /> Verify
                   </a>
