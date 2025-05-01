@@ -39,6 +39,17 @@ const allProjects = [
     github: "#",
     demo: "https://medicine-app-demo.com"
   },
+  {
+  category: "AI Projects",
+  title: "Job Post Fraud Detection",
+  description: "Built for job verification in the CSE Hackathon, this FastAPI-powered web app uses an AI model to classify job posts as Real or Fake with a trust score. It scrapes job data from URLs and evaluates using NLP and a trained classifier.",
+  techStack: ["Python", "FastAPI", "Scikit-Learn", "TfidfVectorizer", "RandomForest", "HTML/CSS/JS", "BeautifulSoup"],
+  icon: Brain,
+  github: "https://github.com/ismailnossam01/job-verification-ai", // Update if needed
+  demo: "", // Optional - fill if deployed
+  isWinner:true
+},
+
 
   // Web Development
   {
