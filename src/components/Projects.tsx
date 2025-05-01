@@ -43,7 +43,7 @@ const allProjects = [
   category: "AI Projects",
   title: "Job Post Fraud Detection",
   description: "Built for job verification in the CSE Hackathon, this FastAPI-powered web app uses an AI model to classify job posts as Real or Fake with a trust score. It scrapes job data from URLs and evaluates using NLP and a trained classifier.",
-  techStack: ["Python", "FastAPI", "Scikit-Learn", "TfidfVectorizer", "RandomForest", "HTML/CSS/JS", "BeautifulSoup"],
+  techStack: ["Python", "FastAPI", "Scikit-Learn", "RandomForest", "HTML/CSS/JS", "BeautifulSoup"],
   icon: Brain,
   github: "https://github.com/ismailnossam01/AIJobVerficationCSEHack", // Update if needed
   demo: "https://drive.google.com/file/d/1mSvX8lWeurBw-qEWmaHPTWRNAjOH8mxv/view?usp=sharing", // Optional - fill if deployed
