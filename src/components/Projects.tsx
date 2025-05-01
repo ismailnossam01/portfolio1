@@ -5,12 +5,21 @@ const allProjects = [
   // AI Projects
   {
     category: "AI Projects",
-    title: "Generative AI Models for Real-Time Text and Voice Responses",
-    description: "Enhanced user interaction using LLMs, LangChain, Hugging Face for real-time voice/text responses.",
+    title: "Real-Time Text Chatbot",
+    description: "Text-based interaction using LLMs, LangChain and Hugging Face.",
     techStack: ["LLMs", "LangChain", "Hugging Face"],
     icon: Brain,
     github: "https://github.com/ismailnossam01/GenAI-Models",
-    demo: "https://genai-demo.com"
+    demo: "https://genai-text-demo.com"
+  },
+  {
+    category: "AI Projects",
+    title: "Real-Time Voice Assistant",
+    description: "Voice-based interaction using LLMs and TTS with LangChain pipeline.",
+    techStack: ["LLMs", "LangChain", "TTS", "Hugging Face"],
+    icon: Brain,
+    github: "https://github.com/ismailnossam01/GenAI-Models",
+    demo: "https://genai-voice-demo.com"
   },
   {
     category: "AI Projects",
@@ -18,6 +27,7 @@ const allProjects = [
     description: "Voice-activated assistant for real-time book queries with speech recognition.",
     techStack: ["Python", "Speech Recognition", "TTS", "Pandas"],
     icon: BookOpen,
+    github: "#",
     demo: "https://library-assistant-demo.com"
   },
   {
@@ -26,6 +36,7 @@ const allProjects = [
     description: "App for medicine details and alternatives using CSV-based quick lookup.",
     techStack: ["Python", "CSV File Handling"],
     icon: Stethoscope,
+    github: "#",
     demo: "https://medicine-app-demo.com"
   },
 
@@ -36,6 +47,7 @@ const allProjects = [
     description: "Responsive AI/ML department website.",
     techStack: ["HTML", "CSS", "JavaScript", "ReactJS"],
     icon: Globe,
+    github: "#",
     demo: "https://dept-website.com"
   },
   {
@@ -44,6 +56,7 @@ const allProjects = [
     description: "My personal portfolio showcasing all projects and skills.",
     techStack: ["ReactJS", "Tailwind"],
     icon: Globe,
+    github: "https://github.com/ismailnossam01/portfolio",
     demo: "https://ismailnossam01.vercel.app"
   },
   {
@@ -52,6 +65,7 @@ const allProjects = [
     description: "Minimal, functional todo list with persistent storage.",
     techStack: ["HTML", "CSS", "JavaScript"],
     icon: Globe,
+    github: "#",
     demo: "https://todo-app-demo.com"
   },
   {
@@ -60,6 +74,7 @@ const allProjects = [
     description: "Frontend project mimicking Swiggy/Zomato.",
     techStack: ["HTML", "CSS", "JavaScript"],
     icon: Globe,
+    github: "#",
     demo: "https://foodmunch-demo.com"
   },
 
@@ -89,7 +104,9 @@ const allProjects = [
     title: "CODEQUEST 24-Hour Hackathon",
     description: "Participated in campus-wide hackathon building a full-stack project under 24 hours.",
     techStack: ["React", "MongoDB", "Node.js"],
-    icon: Gamepad2
+    icon: Gamepad2,
+    github: "#",
+    demo: "#"
   },
 
   // Others
@@ -99,6 +116,7 @@ const allProjects = [
     description: "Created a PUBG-themed virtual environment using Frame VR.",
     techStack: ["Frame VR", "3D Modeling"],
     icon: Gamepad2,
+    github: "#",
     demo: "https://vr-pubg-frame.com"
   }
 ];
@@ -127,16 +145,24 @@ const ProjectCard = ({ project }) => {
           </div>
         </div>
         <div className="flex space-x-2">
-          {project.github && (
-            <a href={project.github} target="_blank" rel="noopener noreferrer" title="GitHub Repo" className="p-2 rounded-full bg-blue-100 hover:bg-blue-600 hover:text-white transition duration-300">
-              <Github size={18} />
-            </a>
-          )}
-          {project.demo && (
-            <a href={project.demo} target="_blank" rel="noopener noreferrer" title="View Demo" className="p-2 rounded-full bg-blue-100 hover:bg-blue-600 hover:text-white transition duration-300">
-              <MonitorPlay size={18} />
-            </a>
-          )}
+          <a
+            href={project.github || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="GitHub Repo"
+            className="p-2 rounded-full bg-blue-100 hover:bg-blue-600 hover:text-white transition duration-300"
+          >
+            <Github size={18} />
+          </a>
+          <a
+            href={project.demo || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="View Demo"
+            className="p-2 rounded-full bg-blue-100 hover:bg-blue-600 hover:text-white transition duration-300"
+          >
+            <MonitorPlay size={18} />
+          </a>
         </div>
       </div>
     </div>
