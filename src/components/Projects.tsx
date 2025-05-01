@@ -96,8 +96,8 @@ const allProjects = [
     description: "Campus-wide hackathon building a Chatbot + VR + AI Job verification for the students.",
     techStack: ["MERN", "Vite", "FrameVR", "VoiceFlow"],
     icon: Brain,
-    github: "https://github.com/ismailnossam01/AIJobVerficationCSEHack",
-    demo: "https://unifiedportal-demo.com",
+    github: "https://github.com/ismailnossam01/UniConnect",
+    demo: "https://drive.google.com/file/d/16Dmi2CNxL-7X4WHIBIroRoqVBFU5rrEr/view?usp=sharing",
     isWinner: true
   },
   {
@@ -106,8 +106,8 @@ const allProjects = [
     description: "In a Thrilling 3 Hour GDG Hackathon Designed a Clean, responsive UI for event registration.",
     techStack: ["ReactJS", "Vite"],
     icon: Globe,
-    github: "https://github.com/ismailnossam01/event-listing",
-    demo: "https://eventplatform-demo.com",
+    github: "https://github.com/ismailnossam01/EventHub",
+    demo: "https://eventhubv2.netlify.app",
     isWinner: true
   },
   {
@@ -116,8 +116,8 @@ const allProjects = [
     description: "Participated in campus-wide hackathon building a full-stack project under 24 hours.",
     techStack: ["React", "Firebase", "Node.js", "Type Script"],
     icon: Gamepad2,
-    github: "#",
-    demo: "#"
+    github: "https://github.com/ismailnossam01/learntrack",
+    demo: "https://learntrack.vercel.app"
   },
 
   // Others
@@ -127,7 +127,7 @@ const allProjects = [
     description: "Created a PUBG-themed virtual environment using Frame VR.",
     techStack: ["Frame VR", "3D Modeling"],
     icon: Gamepad2,
-    demo: "https://vr-pubg-frame.com"
+    demo: "https://youtu.be/pQxfI-US4wY?si=aBFvDlmyHzenAsLO"
   }
 ];
 
