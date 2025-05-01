@@ -133,7 +133,7 @@ const allProjects = [
     category: "Others",
     title: "Shoot It Game",
     description: "Created a small shooting game for the desktop using python programming.",
-    techStack: ["Frame VR", "3D Modeling"],
+    techStack: ["Python, Pygame"],
     icon: Gamepad2,
     demo: "https://drive.google.com/file/d/1NJh1JoEeNSXcvfYeYVYx03gIPqmB_0r1/view?usp=sharing"
   }
