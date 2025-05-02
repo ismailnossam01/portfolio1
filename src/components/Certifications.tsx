@@ -14,35 +14,36 @@ const certifications = [
     provider: "Nxtwave",
     icon: BrainCircuit,
     certs: [
-      { name: "Python", preview: "https://drive-link.com/python-preview", verify: "https://verify-link.com/python" },
-      { name: "Static and Responsive web development", preview: "https://drive-link.com/static-web", verify: "https://verify-link.com/static-web" },
-      { name: "Developer Foundations", preview: "https://drive-link.com/foundations", verify: "https://verify-link.com/foundations" },
-      { name: "JavaScript", preview: "https://drive-link.com/js", verify: "https://verify-link.com/js" },
-      { name: "ReactJS", preview: "https://drive-link.com/react", verify: "https://verify-link.com/react" },
-      { name: "NodeJS", preview: "https://drive-link.com/node", verify: "https://verify-link.com/node" },
-      { name: "SQL", preview: "https://drive-link.com/sql", verify: "https://verify-link.com/sql" }
+      { name: "Python", preview: "https://drive.google.com/file/d/1HsjHHPsH3fTLBGo7r1NF9AIhgHfKXLZD/view", verify: "https://drive.google.com/file/d/1HsjHHPsH3fTLBGo7r1NF9AIhgHfKXLZD/view" },
+      { name: "Static web development", preview: "https://drive-link.com/static-web", verify: "https://drive.google.com/file/d/1UDfZDnmgc-wdLC09NKIgeTQHKX9fcaIQ/view" },
+      { name: "Responsive web development", preview: "https://drive-link.com/static-web", verify: "https://drive.google.com/file/d/11Np1AdYhF6vQ42aeYsSIv8AxQFvFFF59/view" },
+      { name: "Developer Foundations", preview: "https://drive-link.com/foundations", verify: "https://drive.google.com/file/d/1OMmQ_OXMYdqcS_UpEYCwPGpxv8YjZB5O/view" },
+      { name: "JavaScript", preview: "https://drive-link.com/js", verify: "https://drive.google.com/file/d/12yquO-GtliqP03TZczEDkK4FqRVWUo7T/view" },
+      { name: "ReactJS", preview: "https://drive-link.com/react", verify: "https://drive.google.com/file/d/1jd70pMN88bNJm3mviwtkZTMT23p3Uj9E/view" },
+      { name: "NodeJS", preview: "https://drive-link.com/node", verify: "https://drive.google.com/file/d/1YmSSbCepw_W2IjDLbMtUZGPDsn1Hb-YG/view" },
+      { name: "SQL", preview: "https://drive-link.com/sql", verify: "https://drive.google.com/file/d/1mbkZx5hQ_jaGRVu8EnMBpFn5mZ0P4xQw/view" }
     ]
   },
   {
     provider: "NPTEL",
     icon: GraduationCap,
     certs: [
-      { name: "IOT", preview: "https://drive-link.com/iot", verify: "https://verify-link.com/iot" },
-      { name: "Soft Skills", preview: "https://drive-link.com/soft-skills", verify: "https://verify-link.com/soft-skills" }
+      { name: "IOT", preview: "https://drive-link.com/iot", verify: "https://drive.google.com/file/d/1baiUX5Rusb2JbAg16_8q6j3qBLb8djAn/view" },
+      { name: "Soft Skills", preview: "https://drive-link.com/soft-skills", verify: "https://drive.google.com/file/d/1L6QSrtqLoU6qB8NOCl4z1CwCl67aQfVt/view" }
     ]
   },
   {
     provider: "Coursera",
     icon: CloudSun,
     certs: [
-      { name: "Google AI Essentials", preview: "https://drive-link.com/google-ai", verify: "https://verify-link.com/google-ai" }
+      { name: "Google AI Essentials", preview: "https://drive-link.com/google-ai", verify: "https://drive.google.com/file/d/16EBlPrhB1pJwELfmqj-m53B7KLqfOtNx/view" }
     ]
   },
   {
     provider: "Microsoft",
     icon: Award,
     certs: [
-      { name: "Azure AI Fundamentals", preview: "https://drive-link.com/azure-ai", verify: "https://verify-link.com/azure-ai" }
+      { name: "Azure AI Fundamentals", preview: "https://drive-link.com/azure-ai", verify: "https://drive.google.com/file/d/16BbUPn-O9bJH11U-YrWi-Pu0Dmgq65nq/view" }
     ]
   }
 ];
