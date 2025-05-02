@@ -126,30 +126,19 @@ const Certifications = () => {
   return (
     <div className="space-y-10">
       {previewUrl && (
-        <div className="fixed inset-0 z-50 bg-black bg-opacity-60 flex items-center justify-center p-4">
-          <div className="relative bg-white rounded-xl shadow-lg max-w-5xl w-full max-h-[90%] flex items-center justify-center overflow-hidden">
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-4">
+          <div className="relative bg-white rounded-xl shadow-lg max-w-6xl w-auto max-h-[90vh] overflow-hidden flex items-center justify-center">
             <button
               className="absolute top-3 right-3 text-gray-700 hover:text-red-500"
               onClick={() => setPreviewUrl(null)}
             >
               <X size={20} />
             </button>
-            {previewUrl.match(/\.(jpeg|jpg|png)$/i) ? (
-              <img
-                src={previewUrl}
-                alt="Certificate Preview"
-                className="max-w-full max-h-full object-contain rounded-md"
-              />
-            ) : (
-              <iframe
-                src={previewUrl}
-                title="Certificate Preview"
-                className="w-full h-full rounded-md border"
-                style={{ objectFit: "contain" }}
-                frameBorder="0"
-                allowFullScreen
-              />
-            )}
+            <img
+              src={previewUrl}
+              alt="Certificate Preview"
+              className="w-auto h-auto max-h-[90vh] max-w-[90vw] object-contain rounded"
+            />
           </div>
         </div>
       )}
