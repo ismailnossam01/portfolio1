@@ -84,16 +84,16 @@ function App() {
             {/* Stats Section */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-8">
               {[ 
-                { label: "Projects", count: 8 },
-                { label: "Certifications", count: 10 },
+                { label: "Projects", count: 10 },
+                { label: "Certifications", count: 11 },
                 { label: "Achievements", count: 5 },
-                { label: "Internships", count: 2 }
+                { label: "Internships", count: 1 }
               ].map((item, index) => (
                 <div
                   key={index}
                   className="bg-blue-100 text-center rounded-2xl p-2 shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-1"
                 >
-                  <h3 className="text-xl font-bold text-blue-500 mb-2">
+                  <h3 className="text-2xl font-bold text-blue-500 mb-2">
                     <span className="count-up">{item.count}+ </span>
                   </h3>
                   <p className="text-sm font-medium text-gray-700">{item.label}</p>
