@@ -87,7 +87,7 @@ function App() {
                 { label: "Projects", count: 10 },
                 { label: "Certifications", count: 11 },
                 { label: "Achievements", count: 5 },
-                { label: "Internships", count: 1 }
+                { label: "Work Experience", count: 1 }
               ].map((item, index) => (
                 <div
                   key={index}
