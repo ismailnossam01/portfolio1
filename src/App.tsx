@@ -91,7 +91,7 @@ function App() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-blue-100 text-center rounded-xl p-3 shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-1"
+                  className="bg-blue-100 text-center rounded-2xl p-2 shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-1"
                 >
                   <h3 className="text-xl font-bold text-blue-500 mb-2">
                     <span className="count-up">{item.count}+ </span>
