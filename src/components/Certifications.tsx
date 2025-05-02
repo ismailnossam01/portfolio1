@@ -15,35 +15,35 @@ const certifications = [
     icon: BrainCircuit,
     certs: [
       { name: "Python", preview: "https://marketplace.canva.com/EAFy42rCTA0/1/0/1600w/canva-blue-minimalist-certificate-of-achievement-_asVJz8YgJE.jpg", verify: "https://drive.google.com/file/d/1HsjHHPsH3fTLBGo7r1NF9AIhgHfKXLZD/view" },
-      { name: "Static web development", preview: "https://drive-link.com/static-web", verify: "https://drive.google.com/file/d/1UDfZDnmgc-wdLC09NKIgeTQHKX9fcaIQ/view" },
-      { name: "Responsive web development", preview: "https://drive-link.com/static-web", verify: "https://drive.google.com/file/d/11Np1AdYhF6vQ42aeYsSIv8AxQFvFFF59/view" },
-      { name: "Developer Foundations", preview: "https://drive-link.com/foundations", verify: "https://drive.google.com/file/d/1OMmQ_OXMYdqcS_UpEYCwPGpxv8YjZB5O/view" },
-      { name: "JavaScript", preview: "https://drive-link.com/js", verify: "https://drive.google.com/file/d/12yquO-GtliqP03TZczEDkK4FqRVWUo7T/view" },
-      { name: "ReactJS", preview: "https://drive-link.com/react", verify: "https://drive.google.com/file/d/1jd70pMN88bNJm3mviwtkZTMT23p3Uj9E/view" },
-      { name: "NodeJS", preview: "https://drive-link.com/node", verify: "https://drive.google.com/file/d/1YmSSbCepw_W2IjDLbMtUZGPDsn1Hb-YG/view" },
-      { name: "SQL", preview: "https://drive-link.com/sql", verify: "https://drive.google.com/file/d/1mbkZx5hQ_jaGRVu8EnMBpFn5mZ0P4xQw/view" }
+      { name: "Static web development", preview: "https://drive-link.com/static-web.jpg", verify: "https://drive.google.com/file/d/1UDfZDnmgc-wdLC09NKIgeTQHKX9fcaIQ/view" },
+      { name: "Responsive web development", preview: "https://drive-link.com/responsive-web.jpg", verify: "https://drive.google.com/file/d/11Np1AdYhF6vQ42aeYsSIv8AxQFvFFF59/view" },
+      { name: "Developer Foundations", preview: "https://drive-link.com/foundations.jpg", verify: "https://drive.google.com/file/d/1OMmQ_OXMYdqcS_UpEYCwPGpxv8YjZB5O/view" },
+      { name: "JavaScript", preview: "https://drive-link.com/js.jpg", verify: "https://drive.google.com/file/d/12yquO-GtliqP03TZczEDkK4FqRVWUo7T/view" },
+      { name: "ReactJS", preview: "https://drive-link.com/react.jpg", verify: "https://drive.google.com/file/d/1jd70pMN88bNJm3mviwtkZTMT23p3Uj9E/view" },
+      { name: "NodeJS", preview: "https://drive-link.com/node.jpg", verify: "https://drive.google.com/file/d/1YmSSbCepw_W2IjDLbMtUZGPDsn1Hb-YG/view" },
+      { name: "SQL", preview: "https://drive-link.com/sql.jpg", verify: "https://drive.google.com/file/d/1mbkZx5hQ_jaGRVu8EnMBpFn5mZ0P4xQw/view" }
     ]
   },
   {
     provider: "NPTEL",
     icon: GraduationCap,
     certs: [
-      { name: "IOT", preview: "https://drive-link.com/iot", verify: "https://drive.google.com/file/d/1baiUX5Rusb2JbAg16_8q6j3qBLb8djAn/view" },
-      { name: "Soft Skills", preview: "https://drive-link.com/soft-skills", verify: "https://drive.google.com/file/d/1L6QSrtqLoU6qB8NOCl4z1CwCl67aQfVt/view" }
+      { name: "IOT", preview: "https://drive-link.com/iot.jpg", verify: "https://drive.google.com/file/d/1baiUX5Rusb2JbAg16_8q6j3qBLb8djAn/view" },
+      { name: "Soft Skills", preview: "https://drive-link.com/soft-skills.jpg", verify: "https://drive.google.com/file/d/1L6QSrtqLoU6qB8NOCl4z1CwCl67aQfVt/view" }
     ]
   },
   {
     provider: "Coursera",
     icon: CloudSun,
     certs: [
-      { name: "Google AI Essentials", preview: "https://drive-link.com/google-ai", verify: "https://drive.google.com/file/d/16EBlPrhB1pJwELfmqj-m53B7KLqfOtNx/view" }
+      { name: "Google AI Essentials", preview: "https://drive-link.com/google-ai.jpg", verify: "https://drive.google.com/file/d/16EBlPrhB1pJwELfmqj-m53B7KLqfOtNx/view" }
     ]
   },
   {
     provider: "Microsoft",
     icon: Award,
     certs: [
-      { name: "Azure AI Fundamentals", preview: "https://drive-link.com/azure-ai", verify: "https://drive.google.com/file/d/16BbUPn-O9bJH11U-YrWi-Pu0Dmgq65nq/view" }
+      { name: "Azure AI Fundamentals", preview: "https://drive-link.com/azure-ai.jpg", verify: "https://drive.google.com/file/d/16BbUPn-O9bJH11U-YrWi-Pu0Dmgq65nq/view" }
     ]
   }
 ];
@@ -62,13 +62,22 @@ const Certifications = () => {
             >
               <X size={20} />
             </button>
-            <iframe
-              src={previewUrl}
-              title="Certificate Preview"
-              className="w-full h-full rounded-md border"
-              frameBorder="0"
-              allowFullScreen
-            />
+            {previewUrl.match(/\.(jpeg|jpg|png)$/i) ? (
+              <img
+                src={previewUrl}
+                alt="Certificate Preview"
+                className="w-full h-full object-contain rounded-md"
+              />
+            ) : (
+              <iframe
+                src={previewUrl}
+                title="Certificate Preview"
+                className="w-full h-full rounded-md border object-contain"
+                style={{ objectFit: "contain" }}
+                frameBorder="0"
+                allowFullScreen
+              />
+            )}
           </div>
         </div>
       )}
@@ -95,7 +104,7 @@ const Certifications = () => {
               >
                 <div className="flex justify-between items-center">
                   <h4 className="text-gray-800 font-medium mb-3 flex items-center gap-2">
-                    <Award className="text-blue-400 w-4 h-4 group-hover:text-blue-600 transition" /> 
+                    <Award className="text-blue-400 w-4 h-4 group-hover:text-blue-600 transition" />
                     {cert.name}
                   </h4>
                   <div className="flex gap-2">
