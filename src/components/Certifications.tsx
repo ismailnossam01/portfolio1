@@ -14,7 +14,7 @@ const certifications = [
     provider: "Nxtwave",
     icon: BrainCircuit,
     certs: [
-      { name: "Python", preview: "https://ik.imagekit.io/smhlaofs7/programming%20foundations%20with%20python.pdf?updatedAt=1746163816456", verify: "https://drive.google.com/file/d/1HsjHHPsH3fTLBGo7r1NF9AIhgHfKXLZD/view" },
+      { name: "Python", preview: "https://ik.imagekit.io/smhlaofs7/programming%20foundations%20with%20python_page-0001.jpg?updatedAt=1746165065611", verify: "https://drive.google.com/file/d/1HsjHHPsH3fTLBGo7r1NF9AIhgHfKXLZD/view" },
       { name: "Static web development", preview: "https://drive-link.com/static-web.jpg", verify: "https://drive.google.com/file/d/1UDfZDnmgc-wdLC09NKIgeTQHKX9fcaIQ/view" },
       { name: "Responsive web development", preview: "https://drive-link.com/responsive-web.jpg", verify: "https://drive.google.com/file/d/11Np1AdYhF6vQ42aeYsSIv8AxQFvFFF59/view" },
       { name: "Developer Foundations", preview: "https://drive-link.com/foundations.jpg", verify: "https://drive.google.com/file/d/1OMmQ_OXMYdqcS_UpEYCwPGpxv8YjZB5O/view" },
