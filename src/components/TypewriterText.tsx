@@ -12,7 +12,7 @@ const TypewriterText: React.FC<TypewriterTextProps> = ({ text, className = '' })
     'AI & ML Passionate',
     'Full Stack Developer',
     'Python Developer',
-    'Data Structures & Algorithms
+    'Data Structures & Algorithms'
   ];
 
   useEffect(() => {
