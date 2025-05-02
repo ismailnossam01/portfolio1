@@ -54,10 +54,10 @@ const Certifications = () => {
   return (
     <div className="space-y-10">
       {previewUrl && (
-        <div className="fixed inset-0 bg-black bg-opacity-60 z-50 flex items-center justify-center">
-          <div className="relative bg-white p-4 rounded-xl shadow-lg w-[90%] h-[90%]">
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-60 flex items-center justify-center p-4">
+          <div className="relative bg-white rounded-xl shadow-lg max-w-5xl w-full h-[90%] flex items-center justify-center overflow-auto">
             <button
-              className="absolute top-2 right-2 text-gray-700 hover:text-red-500"
+              className="absolute top-3 right-3 text-gray-700 hover:text-red-500"
               onClick={() => setPreviewUrl(null)}
             >
               <X size={20} />
@@ -66,13 +66,13 @@ const Certifications = () => {
               <img
                 src={previewUrl}
                 alt="Certificate Preview"
-                className="w-full h-full object-contain rounded-md"
+                className="max-w-full max-h-full object-contain rounded-md"
               />
             ) : (
               <iframe
                 src={previewUrl}
                 title="Certificate Preview"
-                className="w-full h-full rounded-md border object-contain"
+                className="w-full h-full rounded-md border"
                 style={{ objectFit: "contain" }}
                 frameBorder="0"
                 allowFullScreen
@@ -104,7 +104,7 @@ const Certifications = () => {
               >
                 <div className="flex justify-between items-center">
                   <h4 className="text-gray-800 font-medium mb-3 flex items-center gap-2">
-                    <Award className="text-blue-400 w-4 h-4 group-hover:text-blue-600 transition" />
+                    <Award className="text-blue-400 w-4 h-4" />
                     {cert.name}
                   </h4>
                   <div className="flex gap-2">
