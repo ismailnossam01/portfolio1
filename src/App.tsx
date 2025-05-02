@@ -41,33 +41,31 @@ function App() {
               </a>
             </div>
 
-            {/* Corrected button section */}
+            {/* Buttons Section */}
             <div className="flex flex-col sm:flex-col items-center space-y-4 mt-6 w-full max-w-md">
-  <div className="flex flex-col sm:flex-row sm:space-x-4 w-full">
-    <a
-      href="mailto:ismailnossam@gmail.com"
-      className="flex-1 inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-500 text-white font-semibold hover:from-blue-500 hover:to-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-    >
-      Hire Me
-    </a>
-    <a
-      href="#contact"
-      className="flex-1 inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1 mt-4 sm:mt-0"
-    >
-      Contact
-    </a>
-  </div>
-  <a
-  href="https://drive.google.com/file/d/1CvYStMh1hTN8fkeqrjZtcTlE-K7ZpTBR/view?usp=sharing"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1 w-full"
->
-  View Resume
-</a>
-
-</div>
-
+              <div className="flex flex-col sm:flex-row sm:space-x-4 w-full">
+                <a
+                  href="mailto:ismailnossam@gmail.com"
+                  className="flex-1 inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-400 to-blue-500 text-white font-semibold hover:from-blue-500 hover:to-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
+                  Hire Me
+                </a>
+                <a
+                  href="#contact"
+                  className="flex-1 inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1 mt-4 sm:mt-0"
+                >
+                  Contact
+                </a>
+              </div>
+              <a
+                href="https://drive.google.com/file/d/1CvYStMh1hTN8fkeqrjZtcTlE-K7ZpTBR/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-white transition-all duration-200 transform hover:-translate-y-1 w-full"
+              >
+                View Resume
+              </a>
+            </div>
           </div>
 
           <FloatingImage
@@ -76,12 +74,33 @@ function App() {
           />
         </div>
         
-        {/* Professional Summary Section */}
+        {/* About Me Section */}
         <Section title="About Me" id="professional-summary">
           <div className="bg-blue-50 p-8 rounded-lg shadow-lg hover:scale-100 hover:shadow-2xl hover:translate-y-[-10px] transition-all duration-300 ease-in-out transform">
             <p className="leading-relaxed text-gray-800">
               B.Tech Computer Science and Engineering (Artificial Intelligence and Machine Learning) student with a strong foundation in AI/ML concepts and a passion for robotics. Skilled in Web Development (MERN Stack) and Data Structures and Algorithms. Experienced in hands-on projects and passionate about solving real-world problems with innovative, AI-powered solutions. A quick learner, adaptable, and eager to grow both personally and professionally.
             </p>
+
+            {/* Stats Section */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-8">
+              {[
+                { label: "Projects", count: 8 },
+                { label: "Certifications", count: 10 },
+                { label: "Achievements", count: 5 },
+                { label: "Internships", count: 2 },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-blue-100 text-center rounded-2xl p-6 shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-1"
+                >
+                  <h3 className="text-3xl font-bold text-blue-500 mb-2">
+                    {item.count}+
+                  </h3>
+                  <p className="text-sm font-medium text-gray-700">{item.label}</p>
+                </div>
+              ))}
+            </div>
+
           </div>
         </Section>
 
@@ -90,7 +109,7 @@ function App() {
           <Education />
         </Section>
 
-        {/* Experience Section */}
+        {/* Work Experience */}
         <Section title="Work Experience" id="experience">
           <WorkExperience />
         </Section>
@@ -110,7 +129,7 @@ function App() {
           <Achievements />
         </Section>
 
-        {/* Extracurricular Activities Section */}
+        {/* Extracurricular */}
         <Section title="Extracurricular Activities" id="extracurricular">
           <ExtraCurricular />
         </Section>
@@ -124,10 +143,9 @@ function App() {
         <Section title="Contact" id="contact">
           <Contact />
         </Section>
-        
       </div>
 
-      {/* Footer Section */}
+      {/* Footer */}
       <footer className="py-8">
         <div className="container mx-auto text-center">
           <p className="text-blue-400 text-lg italic font-cursive">
