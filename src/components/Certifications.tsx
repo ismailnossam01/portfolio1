@@ -15,35 +15,35 @@ const certifications = [
     icon: BrainCircuit,
     certs: [
       { name: "Python", preview: "https://ik.imagekit.io/smhlaofs7/programming%20foundations%20with%20python_page-0001.jpg?updatedAt=1746165065611", verify: "https://drive.google.com/file/d/1HsjHHPsH3fTLBGo7r1NF9AIhgHfKXLZD/view" },
-      { name: "Static web development", preview: "https://drive-link.com/static-web.jpg", verify: "https://drive.google.com/file/d/1UDfZDnmgc-wdLC09NKIgeTQHKX9fcaIQ/view" },
-      { name: "Responsive web development", preview: "https://drive-link.com/responsive-web.jpg", verify: "https://drive.google.com/file/d/11Np1AdYhF6vQ42aeYsSIv8AxQFvFFF59/view" },
-      { name: "Developer Foundations", preview: "https://drive-link.com/foundations.jpg", verify: "https://drive.google.com/file/d/1OMmQ_OXMYdqcS_UpEYCwPGpxv8YjZB5O/view" },
-      { name: "JavaScript", preview: "https://drive-link.com/js.jpg", verify: "https://drive.google.com/file/d/12yquO-GtliqP03TZczEDkK4FqRVWUo7T/view" },
-      { name: "ReactJS", preview: "https://drive-link.com/react.jpg", verify: "https://drive.google.com/file/d/1jd70pMN88bNJm3mviwtkZTMT23p3Uj9E/view" },
-      { name: "NodeJS", preview: "https://drive-link.com/node.jpg", verify: "https://drive.google.com/file/d/1YmSSbCepw_W2IjDLbMtUZGPDsn1Hb-YG/view" },
-      { name: "SQL", preview: "https://drive-link.com/sql.jpg", verify: "https://drive.google.com/file/d/1mbkZx5hQ_jaGRVu8EnMBpFn5mZ0P4xQw/view" }
+      { name: "Static web development", preview: "https://ik.imagekit.io/smhlaofs7/build%20your%20own%20static%20website_page-0001.jpg?updatedAt=1746165063497", verify: "https://drive.google.com/file/d/1UDfZDnmgc-wdLC09NKIgeTQHKX9fcaIQ/view" },
+      { name: "Responsive web development", preview: "https://ik.imagekit.io/smhlaofs7/build%20your%20own%20responsive%20website_page-0001.jpg?updatedAt=1746165063520", verify: "https://drive.google.com/file/d/11Np1AdYhF6vQ42aeYsSIv8AxQFvFFF59/view" },
+      { name: "Developer Foundations", preview: "https://ik.imagekit.io/smhlaofs7/Developer%20Foundations_page-0001.jpg?updatedAt=1746165063514", verify: "https://drive.google.com/file/d/1OMmQ_OXMYdqcS_UpEYCwPGpxv8YjZB5O/view" },
+      { name: "JavaScript", preview: "https://ik.imagekit.io/smhlaofs7/javascript%20essentials_page-0001.jpg?updatedAt=1746165063518", verify: "https://drive.google.com/file/d/12yquO-GtliqP03TZczEDkK4FqRVWUo7T/view" },
+      { name: "ReactJS", preview: "https://ik.imagekit.io/smhlaofs7/REACT%20JS_page-0001.jpg?updatedAt=1746165063494", verify: "https://drive.google.com/file/d/1jd70pMN88bNJm3mviwtkZTMT23p3Uj9E/view" },
+      { name: "NodeJS", preview: "https://ik.imagekit.io/smhlaofs7/Node%20JS_page-0001.jpg?updatedAt=1746165110108", verify: "https://drive.google.com/file/d/1YmSSbCepw_W2IjDLbMtUZGPDsn1Hb-YG/view" },
+      { name: "SQL", preview: "https://ik.imagekit.io/smhlaofs7/introduction%20to%20database_page-0001.jpg?updatedAt=1746165063491", verify: "https://drive.google.com/file/d/1mbkZx5hQ_jaGRVu8EnMBpFn5mZ0P4xQw/view" }
     ]
   },
   {
     provider: "NPTEL",
     icon: GraduationCap,
     certs: [
-      { name: "IOT", preview: "https://drive-link.com/iot.jpg", verify: "https://drive.google.com/file/d/1baiUX5Rusb2JbAg16_8q6j3qBLb8djAn/view" },
-      { name: "Soft Skills", preview: "https://drive-link.com/soft-skills.jpg", verify: "https://drive.google.com/file/d/1L6QSrtqLoU6qB8NOCl4z1CwCl67aQfVt/view" }
+      { name: "IOT", preview: "https://ik.imagekit.io/smhlaofs7/Introduction%20To%20Internet%20Of%20Things%20NPTEL_page-0001.jpg?updatedAt=1746165064281", verify: "https://drive.google.com/file/d/1baiUX5Rusb2JbAg16_8q6j3qBLb8djAn/view" },
+      { name: "Soft Skills", preview: "https://ik.imagekit.io/smhlaofs7/Soft%20Skills%20NPTEL_page-0001.jpg?updatedAt=1746165064277", verify: "https://drive.google.com/file/d/1L6QSrtqLoU6qB8NOCl4z1CwCl67aQfVt/view" }
     ]
   },
   {
     provider: "Coursera",
     icon: CloudSun,
     certs: [
-      { name: "Google AI Essentials", preview: "https://drive-link.com/google-ai.jpg", verify: "https://drive.google.com/file/d/16EBlPrhB1pJwELfmqj-m53B7KLqfOtNx/view" }
+      { name: "Google AI Essentials", preview: "https://ik.imagekit.io/smhlaofs7/Coursera%20UKJQT8Q2L33A%20(3)_page-0001.jpg?updatedAt=1746165063068", verify: "https://drive.google.com/file/d/16EBlPrhB1pJwELfmqj-m53B7KLqfOtNx/view" }
     ]
   },
   {
     provider: "Microsoft",
     icon: Award,
     certs: [
-      { name: "Azure AI Fundamentals", preview: "https://drive-link.com/azure-ai.jpg", verify: "https://drive.google.com/file/d/16BbUPn-O9bJH11U-YrWi-Pu0Dmgq65nq/view" }
+      { name: "Azure AI Fundamentals", preview: "https://ik.imagekit.io/smhlaofs7/Credentials%20-%20ismailnossam-01%20_%20Microsoft%20Learn%20(1)_page-0002.jpg?updatedAt=1746165062325", verify: "https://drive.google.com/file/d/16BbUPn-O9bJH11U-YrWi-Pu0Dmgq65nq/view" }
     ]
   }
 ];
