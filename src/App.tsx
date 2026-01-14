@@ -69,7 +69,7 @@ function App() {
           </div>
 
           <FloatingImage
-            src="https://i.ibb.co/LDX6xfLB/Whats-App-Image-2025-04-26-at-13-20-09-8e839601.jpg"
+            src="https://res.cloudinary.com/dirtmiqzt/image/upload/v1768386611/IsmailNossam_Profile_pxgvaa.jpg"
             alt="Ismail Nossam"
           />
         </div>
